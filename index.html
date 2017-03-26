@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>We Are Modern</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scrollAnimation.js"></script>
+	<script src="https://use.fontawesome.com/4fe2bf7b28.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- HEADER BEGIN -->
+<header>
+	<div class="gradientOverlay" id="top">
+		<nav class="wrapper">
+			<div>
+				<img src="assets/icons_03.png" alt="logo" class="logo">
+			</div> <!-- logo -->
+			<div class="mobileOnly">
+				<label for="toggle">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</label>
+			</div>
+			<input type="checkbox" id="toggle" name="toggle" class="mobileOnly">
+			<ul class="navMenu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#services" class="navServices">Services</a></li>
+				<li><a href="#portfolio" class="navPortfolio">Portfolio</a></li>
+				<li><a href="#about" class="navAbout">About</a></li>
+				<li><a href="#contact" class="navContact">Contact</a></li>
+				<li class="searchMobile">
+					<form>
+						<input type="text" name="search" placeholder="Search..">
+					</form>
+				</li>
+				<li class="searchLabel"><label for="toggleSearch"><i class="fa fa-search" aria-hidden="true"></i></label></li>
+			</ul>
+		</nav>
+<!-- firefox doesnt read display flex and absolute positioning -->
+		<div class="wrapper searchBarPosition"> 
+			<input type="checkbox" id="toggleSearch" name="toggleSearch">
+			<div class="searchBar">
+				<form>
+					<input type="text" name="search" placeholder="Search..">
+				</form>
+			</div>
+		</div> <!-- searchbar -->
+		<div class="heroHeading">
+			<p class="heroText">We are Modern</p>
+			<h2>Symplify your Business</h2>
+			<div class="buttonPadding">
+				<a href="#" class="buttonPurple">See More</a>
+			</div>
+		</div> <!-- heroHeading -->
+		<img src="assets/headerComputerTop.png" alt="computer" class="computerTop">
+	</div>
+</header>
+<!-- HEADER END -->
+
+<!-- SERVICES BEGIN -->
+<section class="services">
+		<img src="assets/headerComputerBottom.png" alt="computer" class="computerBottom">
+		<div class="hidden" id="services">-</div>
+	<div class="heading">
+		<i class="fa fa-gear" aria-hidden="true"></i>
+		<h1>our services</h1>
+		<h2> Lorem ipsum dolor sit amet</h2>
+	</div>
+	<div class="wrapper colGrid3">
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_11.png">
+			</div>
+			<div>
+				<h3>Web Development</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, veniam.
+			</div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_13.png">
+			</div>
+			<div>
+				<h3>Motion Graphic</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, provident!
+			</div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_16.png">
+			</div>
+			<div>
+				<h3>Branding Design</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora.
+			</div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_22.png">
+			</div>
+			<div>
+				<h3>Furniture Design</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis.
+			</div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_24.png">
+			</div>
+			<div>
+				<h3>Illustration</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, reiciendis.
+			</div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Serv">
+			<div>
+				<img src="assets/icons_26.png">
+			</div>
+			<div>
+				<h3>Industrial Design</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.etur adipisicing elit. Eius, veniam.
+			</div>
+		</div> <!-- colItem3 -->
+	</div> <!-- wrapper colGrid3 -->
+</section> <!-- services -->
+<!-- SERVICES END -->
+
+<!-- PORTFOLIO BEGIN -->
+<section class="portfolio" id="portfolio">
+	<div class="heading">
+		<i class="fa fa-briefcase" aria-hidden="true"></i>
+		<h1>our portfolio</h1>
+		<h2> Dolor sit amet</h2>
+	</div>
+	<ul class="portfolioNav">
+		<li><a href="#">branding design</a></li>
+		<li><a href="#">photography</a></li>
+		<li><a href="#">web design</a></li>
+		<li><a href="#">digital</a></li>
+		<li><a href="#">+</a></li>
+	</ul>
+</section> 
+
+<div class="gallery">
+	<div class="galleryItem gallery1">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+	<div class="galleryItem gallery2">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+	<div class="galleryItem gallery3">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+	<div class="galleryItem gallery4">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+	<div class="galleryItem gallery5">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+	<div class="galleryItem gallery6">
+		<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+	</div>
+</div>
+
+<div class="asideImg">
+	<aside class="doYouLike">
+		<div class="wrapper colGrid2">
+			<div class="colItemLarge2 largerText"> Do You Like Abstract? <br /> Buy it now and try every thing
+			</div>
+			<div class="colItemSmall2">
+				<a href="#" class="buttonPurple">Purchase</a>
+			</div>
+		</div>
+	</aside>
+</div>
+<!-- PORTFOLIO END -->
+
+<!-- WHO ARE WE BEGIN -->
+<section class="whoWeAre" id="about">
+	<div class="heading">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<h1>who we are</h1>
+		<h2>About us</h2>
+	</div>
+	<div class="wrapper colGrid2">
+		<div class="colItemSmall2 desktopOnly">
+<!-- crazy image 1 here -->
+			<div class="stackCSSImgTop ">
+				<div class="insideSquare">
+					<div class="lineWrap">
+						<div class="line usersCircleNest">
+						<i class="fa fa-users usersCircle" aria-hidden="true"></i></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+<!-- crazy image 1 end -->
+<!-- crazy image 2 here -->
+			<div class="stackCSSImgBot">
+				<div class="insideSquare">
+					<div class="lineWrap">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+<!-- crazy image 2 end -->
+		</div>
+		<div class="colItemLarge2 aboutUs">
+			<h3> about us</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi culpa, nulla tenetur voluptate rerum quo voluptatem delectus accusantium necessitatibus.
+			</p>
+			<p> 
+				<i class="fa fa-user" aria-hidden="true"></i>
+				Lorem ipsum dolor sit
+			</p>
+			<p> 
+				<i class="fa fa-cloud" aria-hidden="true"></i>
+				Lorem ipsum dolor sit
+			</p>
+			<p> 
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				Lorem ipsum dolor sit
+			</p>
+		</div>
+	</div> <!-- wrapper -->
+</section>
+<section class="whoWeAre">
+	<h1> our team</h1>
+	<div class="wrapper colGrid3">
+		<div class="colItem3Team">
+			<img src="assets/portrait2.jpg">
+			<div>
+				<h3>Monica Smith</h3>
+				UX Designer
+			</div>
+			<div class="teamSocials">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+			</div>
+			<div class="decoLineTeam"></div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Team">
+			<img src="assets/portrait3.jpg">
+			<div>
+				<h3>Carter Payne</h3>
+				Designer
+			</div>
+			<div class="teamSocials">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+			</div>
+			<div class="decoLineTeam"></div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Team">
+			<img src="assets/portrait4.jpg">
+			<div>
+				<h3>Millika Mong</h3>
+				Programmer
+			</div>
+			<div class="teamSocials">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+			</div>
+			<div class="decoLineTeam"></div>
+		</div> <!-- colItem3 -->
+	</div> <!-- wrapper colGrid3 -->
+</section>
+<!-- WHO WE ARE END -->
+
+<!-- CLIENT BEGIN -->
+<section class="client">
+	<div class="heading">
+		<i class="fa fa-users" aria-hidden="true"></i>
+		<h1>clients say</h1>
+		<h2> Happy Clients</h2>
+	</div>
+	<div class="wrapper">
+		<div class="clientBottom clientBox">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia eveniet maiores voluptate delectus recusandae fuga libero magnam? Sint accusantium mollitia, magnam unde commodi cupiditate! Porro nobis rem necessitatibus ut.</p>
+		</div>
+		<div class="clientTop clientBox">
+			<img src="assets/icons_49.png" class="quotation">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maiores, sapiente. Facere nisi enim commodi natus maiores, libero reprehenderit, necessitatibus quis dolore?</p>
+			<h3> Monica Smith </h3>
+			CEO
+			<div class="clientFaceBorder">
+				<img src="assets/client.jpg" class="clientFace">
+			</div>
+		</div>
+	</div>
+	<p class="clientLinks">
+		<a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
+	</p>
+</section>
+<!-- CLIENT END -->
+
+<!-- WORK PROCESS BEGIN -->
+<section class="workProcess">
+	<div class="heading">
+		<i class="fa fa-wrench" aria-hidden="true"></i>
+		<h1>work process</h1>
+		<h2>show our work</h2>
+	</div>
+	<div class="colGrid4 colGrid4Work wrapper">
+		<div class="colItem4Work">
+			<p class="largerText">01</p>
+			<img src="assets/service_01.png" alt="brainstorming">
+			<p>brainstorming</p>
+		</div>
+		<div class="desktopOnly nextSymbol"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		<div class="colItem4Work">
+			<p class="largerText">02</p>
+			<img src="assets/service_02.png" alt="concept prototype">
+			<p>concept prototype</p>
+		</div>
+		<div class="desktopOnly nextSymbol"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		<div class="colItem4Work">
+			<p class="largerText">03</p>
+			<img src="assets/service_03.png" alt="design layout">
+			<p>design layout</p>
+		</div>
+		<div class="desktopOnly nextSymbol"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		<div class="colItem4Work">
+			<p class="largerText">04</p>
+			<img src="assets/service_04.png" alt="development">
+			<p>development</p>
+		</div>
+	</div> <!-- infoGrid4 wrapper -->
+</section>
+<div class="asideImg">
+	<aside class="weWork">
+		<div class="wrapper colGrid2">
+			<div class="colItemSmall2 desktopOnly">
+				<img src="assets/ipad.png" alt="ipad" class="ipad">
+			</div>
+			<div class="colItemLarge2">
+				<p class="largerText">we work</p>
+				<p class="largerText">With passion</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sequi neque vel rerum, asperiores dolorem, rem doloribus laborum blanditiis, eligendi suscipit. Exercitationem, tempora reiciendis dolorum magnam eum consequatur obcaecati quam. </p>
+			</div>
+		</div>
+	</aside>
+</div>
+<!-- WORK PROCESS END -->
+
+<!-- PRICING BEGIN -->
+<section class="pricing">
+	<div class="heading">
+		<i class="fa fa-tag" aria-hidden="true"></i>
+		<h1>pricing</h1>
+		<h2>get your plans for work</h2>
+	</div>
+	<div class="wrapper colGrid3">
+		<div class="colItem3Price">
+			<h3>website design</h3>
+			<p>$29</p>
+			<p> Features</p>
+			<ul>
+				<li>10 page website design</li>
+				<li>joomla & wordpress ready</li>
+				<li>3 alternative designs</li>
+				<li>free 1 year domain</li>
+				<li>10GB free hosting</li>
+				<li>unlimited revision</li>
+			</ul>
+			<p>
+				<a href="#" class="buttonPurple">order now</a>
+			</p>
+			<div class="decoLinePrice"></div>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Price">
+			<h3>all in one</h3>
+			<p>$99</p>
+			<p> Features</p>
+			<ul>
+				<li>10 page website design</li>
+				<li>joomla & wordpress ready</li>
+				<li>3 alternative designs</li>
+				<li>free 1 year domain</li>
+				<li>10GB free hosting</li>
+				<li>unlimited revision</li>
+			</ul>
+			<p>
+				<a href="#" class="buttonPurple">order now</a>
+			</p>
+		</div> <!-- colItem3 -->
+		<div class="colItem3Price">
+			<h3>website development</h3>
+			<p>$59</p>
+			<p>Features</p>
+			<ul>
+				<li>10 page website design</li>
+				<li>joomla & wordpress ready</li>
+				<li>3 alternative designs</li>
+				<li>free 1 year domain</li>
+				<li>10GB free hosting</li>
+				<li>unlimited revision</li>
+			</ul>
+			<p>
+				<a href="#" class="buttonPurple">order now</a>
+			</p>
+			<div class="decoLinePrice"></div>
+		</div> <!-- colItem3 -->
+	</div> <!-- colGrid3 -->
+</section>
+
+<div class="articleImg">
+	<article>
+		<div class="wrapper colGrid4 colGrid4Price">
+			<div class="colItem4Price colPrice1">
+				<h1>90%</h1>
+				<p>photoshop</p>
+			</div> <!-- colItem4 -->
+			<div class="colItem4Price colPrice2">
+				<h1>80%</h1>
+				<p>html/css</p>
+			</div> <!-- colItem4 -->
+			<div class="colItem4Price colPrice3">
+				<h1>65%</h1>
+				<p>wordpress</p>
+			</div> <!-- colItem4 -->
+			<div class="colItem4Price colPrice4">
+				<h1>85%</h1>
+				<p>ux/ui</p>
+			</div> <!-- colItem4 -->
+		</div>
+	</article>
+</div>
+<!-- PRICING END -->
+
+<!-- GET IN TOUCH BEGIN -->
+<section class="getInTouch" id="contact">
+	<div class="heading">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<h1>get in touch</h1>
+		<h2>support first</h2>
+	</div>
+	<div class="wrapper">
+		<form>
+			<input type="text" class="colItem3Contact input" placeholder="name" maxlength="500" required>
+			<input type="text" class="colItem3Contact input" placeholder="email" maxlength="500" required>
+			<input type="text" class="colItem3Contact input" placeholder="subject" maxlength="500" required>
+			<textarea name="content" class="textarea input" placeholder="content..."></textarea>
+			<div class="sendMeButton">
+			<a href="#" class="buttonPurple"> Send Me </a>
+			</div>
+		</form>
+	</div>
+</section>
+
+<div class="map">
+	<img src="assets/pointer.png" class="pointer">
+</div>
+
+<!-- GET IN TOUCH END -->
+
+<!-- FOOTER BEGIN -->
+<footer>
+	<div class="wrapper">
+		<div class="footer1">
+			<h3>abstract</h3>
+			<p class="emdash desktopOnly"></p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum facere vel totam, enim dolores magnam temporibus voluptatem quibusdam commodi animi.
+			</p>
+		</div>
+		<div class="footer2">
+			<h3>links</h3>
+			<p class="emdash desktopOnly"></p>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#services" class="navServices">Services</a></li>
+				<li><a href="#portfolio" class="navPortfolio">Portfolio</a></li>
+				<li><a href="#about" class="navAbout">About Us</a></li>
+				<li><a href="#contact" class="navContact">Contact</a></li>
+			</p>
+		</div>
+		<div class="footer3">
+			<h3>twitter widget</h3>
+			<p class="emdash desktopOnly"></p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio. </p>
+			<p class="twitterDate"><i class="fa fa-twitter" aria-hidden="true"></i> 01 day ago </p>
+		</div>
+		<div class="footer3">
+			<h3>instagram</h3>
+			<p class="emdash desktopOnly"></p>
+			<div class="instagram">
+				<div class="insta insta1">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="insta insta2">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="insta insta3">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="insta insta4">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="insta insta5">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="insta insta6">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+			</div> <!-- instagram -->
+		</div> <!-- footer3 -->
+	</div> <!-- wrapper -->
+	<div class="footerConnect">
+		<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<p><a href="#" class="toTop">Back to Top</a></p>
+		<div class="backToTop desktopOnly"><a href="#" class="toTop">
+			<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		</a></div>
+
+	</div>
+</footer>
+<!-- FOOTER END -->
+
+</body>
+
+</html>
+<!-- DONE DONE DONE -->

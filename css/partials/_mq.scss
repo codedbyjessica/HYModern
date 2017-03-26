@@ -1,0 +1,176 @@
+
+@media (max-width: 940px) {
+	.wrapper {
+		width: 90%;
+	}
+	.clientBottom {
+		width: 90%;
+	}
+	.colItem3Serv {
+		width: 50%;
+	}
+	// ipad
+	.weWork .colItemSmall2 img{
+		transform: scale(1.5);
+	}
+	.galleryItem .fa{
+		height:200px;
+	}
+	.portfolio ul {
+		li {
+			padding: 1px;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.desktopOnly {
+		display: none;
+	}
+	.colItemSmall2, .colItemLarge2, .colItem3Team, .colItem3Serv, .colItem3Price, .footer1, .footer2, .footer3 {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.doYouLike .colItemSmall2 {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.portfolio ul li {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.colItem4Work, .colItem4Price, .galleryItem {
+		width: 50%;
+	}
+	.galleryItem .fa{
+		height:150px;
+	}
+	.colItem4Price {
+		height: default;
+		width: default;
+		padding: 37px;
+		background-size: 40%;
+		background-repeat: no-repeat;
+	}
+	footer{
+		text-align: center;
+		a {
+			color: $accentColor;
+		}
+	}
+	.footer2{
+		li{
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+	.instagram{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.searchBar, .searchLabel {
+		display: none;
+	}
+	.searchMobile
+	{
+		display: block;
+	}
+	.mobileOnly {
+		font-size: 20px;
+		display: inline;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	nav {
+		display: block;
+		position: relative;
+	}
+	.logo{
+		position: relative;
+		max-width:100px;
+		width: 100%;
+	}
+	nav ul {
+		position: relative;
+		top: -300px;
+		padding: 3px;
+		transition: top 0.3s ease;
+		li{
+			text-align: center;
+			display: block;
+			padding: 1px;
+			background-color: $lightTextColor;
+			a {
+				display: block;
+				padding: 5px 0;
+				color: $accentColor;
+				background: none;
+				border-bottom:none;
+			}
+			a:hover, a:active{
+				color: $lightTextColor;
+				border-bottom:none;
+				background: $accentColor;
+			}
+		}
+	}
+
+	nav .fa-bars {
+		&:hover, &:active{
+			cursor: pointer;
+			box-shadow: $shadow;
+		}
+	}
+
+	input[type=checkbox]:checked ~ ul {
+		top:10px;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	.heroText {
+		margin: 20px 0 12px 0;
+	}
+
+	section, article, aside {
+		padding: 20px 0;
+	}
+
+	.aboutUs {
+		margin: 10px;
+	}
+
+	.client {
+		padding-bottom: 15px;
+	}
+
+	.galleryItem {
+		width: 100%;
+	}
+	.galleryItem .fa{
+		height:200px;
+	}
+	.colItem4Price {
+		background-size: 50%;
+	}
+
+	.colItem3Price:nth-of-type(2n) {
+		padding-bottom: 30px;
+	}
+
+	.insta {
+		width: 40px;
+		height: 40px;
+		.fa {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}

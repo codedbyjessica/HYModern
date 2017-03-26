@@ -1,0 +1,662 @@
+// CONTENT 
+// (services, portfolio, whoWeAre, client, workProcess, pricing, getInTouch)
+
+section, article, aside {
+	padding: 40px 0;
+}
+
+aside{
+	background: $asideBackground;
+}
+
+.asideImg {
+	padding: 0;
+	background-image: url(../assets/section_hero_03.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+article{
+	background: linear-gradient(to bottom, rgba(242, 242, 242, 0.8) 70%, rgba(214, 215, 232, 0.8) 90%);
+	padding-bottom: 80px;
+}
+
+.articleImg {
+	padding: 0;
+	background-image: url(../assets/section_hero_02.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.services, .client, .pricing {
+	background-color: $sectionBackground;
+}
+
+.doYouLike .largerText{
+	@include largerText($lightTextColor, none);
+}
+
+.colGrid2, .colGrid3, .colGrid4 {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.colItemLarge2 {
+	width: 60%;
+}
+
+.colItemSmall2 {
+	width: 40%;
+}
+
+
+// 1 SERVICES
+
+.services{
+	padding-top: 0;
+}
+
+.colItem3Serv {
+	margin-bottom: 20px;
+	width: 33.33%;
+	display: flex;
+	justify-content: space-between;
+	h3 {
+		margin-top: 0;
+	}
+	img{
+		background-color: $lightTextColor;
+		padding: 12px;
+		border-radius: 50%;
+	}
+	div{
+		margin: 10px;
+		&:first-child{
+			width: 30%;
+			align-self:center;
+		}
+		&:last-child{
+			width: 70%;
+		}
+	}
+}
+
+
+// 2 PORTFOLIO
+
+.portfolio ul {
+	margin: 40px 0 10px 0;
+	list-style-type: none;
+	text-align: center;
+	li {
+		display: inline;
+		padding: 10px;
+		a{
+		@include buttonWhite($mediumTextColor, $lightTextColor)
+		border: 1px solid #DDD;
+		text-transform: uppercase;
+		}
+	}
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.galleryItem .fa{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height:$galleryHeightNorm;
+	font-size: 0;
+	color: $lightTextColor;
+	@include gradientOverlay(0);
+	&:hover{
+		@include gradientOverlay(0.7);
+		font-size: 40px;
+	}
+}
+
+.galleryItem{
+	width: 33.33%;
+	height:galleryHeightNorm;
+	background-size: cover;
+	background-position: center;
+}
+
+.gallery1 {
+	background-image: url(../assets/gallery_01.jpg);
+}
+
+.gallery2 {
+	background-image: url(../assets/gallery_02.jpg);
+}
+
+.gallery3 {
+	background-image: url(../assets/gallery_03.jpg);
+}
+
+.gallery4 {
+	background-image: url(../assets/gallery_04.jpg);
+}
+
+.gallery5 {
+	background-image: url(../assets/gallery_05.jpg);
+}
+
+.gallery6 {
+	background-image: url(../assets/gallery_06.png);
+}
+
+.doYouLike .colItemSmall2{
+	align-self: center;
+	text-align: right;
+}
+
+
+// 3 WHO WE ARE
+
+.whoWeAre .colItemSmall2 {
+	position: relative;
+}
+
+.whoWeAre .stackCSSImgTop{
+	position:relative;
+	top: 0;
+	left: 20%;
+	width: 80%;
+	background-color: white;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	box-shadow: $veryLightShadow;
+	border-radius: 7px;
+	padding-top: 50px;
+	.insideSquare {
+		align-self:center;
+		display: flex;
+		justify-content: center;
+		background-color: #e6ece8;
+		width: 80%;
+		height: 180px;
+		border-radius: 7px;
+		.lineWrap{
+			align-self: flex-end;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+			justify-content: center;
+			height: 110px;
+			width: 80%;
+			margin-bottom: 20px;
+			.line {
+					background-color: #c8d7cd;
+					border-radius: 20px;
+					height: 10px;
+					width: 93%;
+					@include marginPaddingZero;
+			}
+		}
+	}
+}
+
+.whoWeAre .stackCSSImgBot{
+	z-index: -1;
+	position: absolute;
+	top: 30px;
+	background-color: white;
+	width: 100%;
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	box-shadow: $veryLightShadow;
+	border-radius: 7px;
+	.insideSquare {
+		align-self:center;
+		display: flex;
+		justify-content: center;
+		background-color: #f6f5fa;
+		width: 85%;
+		height: 180px;
+		border-radius: 7px;
+		.lineWrap{
+			align-self: flex-end;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+			justify-content: center;
+			height: 110px;
+			width: 88%;
+			margin-bottom: 10px;
+			.line {
+					background-color: #e7e6ee;
+					border-radius: 20px;
+					height: 10px;
+					width: 93%;
+					@include marginPaddingZero;
+			}
+		}
+	}
+}
+
+.usersCircleNest{
+	position: relative;
+	text-align: center;
+}
+
+i.usersCircle {
+	position: relative;
+	top: -105px;
+	color: #7dbf95;
+	font-size: 30px;
+	padding: 20px;
+	background-color: #e6ece8;
+	border-radius: 50%;
+	border: 8px solid white;
+}
+
+.aboutUs {
+	padding-left: 40px;
+}
+
+.aboutUs {
+	.fa {
+		font-size: 14px;
+		background-color: blue;
+		width: 36px;
+		height: 36px;
+		margin: 2px 8px 2px 0;
+		text-align: center;
+		padding: 10px;
+		border-radius: 50%;
+	}
+	.fa-user {
+		background-color: #f0e8f2;
+		color: #9a58b3;
+	}
+	.fa-cloud {
+		background-color: #e6f0f6;
+		color: #3f98d8;
+	}
+	.fa-laptop {
+		background-color: #dcf1ee;
+		color: #32bb9e;
+	}
+}
+
+//team
+.colItem3Team {
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	box-shadow: $shadow;
+	background-color: $lightTextColor;
+	img {
+		width: 100%;
+	}
+	div {
+		margin: 5px 5px 0 5px;
+	}
+	h3{
+		margin-bottom: 3px;
+	}
+	&:hover{
+		box-shadow: $lightShadow;
+	}
+}
+
+.teamSocials {
+	text-align: right;
+	.fa-facebook{
+	@include teamSocials (#39559f,#e0e4f0);
+	}
+	.fa-linkedin{
+	@include teamSocials (#ee4888,#f0e8f3);
+	}
+	.fa-behance{
+	@include teamSocials (#0067ff,#e5effb);
+	}
+}
+
+.decoLineTeam{
+	float: right;
+	margin: 10px 7px 0 0;
+	padding: 0;
+	@include decoLine;
+}
+
+// 4 CLIENT
+
+.client {
+	position:relative;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.clientBox{
+	background-color: $lightTextColor;
+	margin: 0 auto;
+	box-shadow: $veryLightShadow;
+	img {
+		display: block;
+	}
+}
+
+.clientBottom {
+	position: absolute;
+	top: 290px;
+	padding: 30px 30px 60px 30px;
+	width: 70%;
+
+}
+
+.clientTop {
+	position: relative;
+	padding: 10px 50px 0px 50px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.clientFaceBorder{
+	position: relative;
+	bottom: -40px;
+	display: flex;
+	align-self: center;
+	justify-content:center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: $gradient;
+}
+
+.clientFace{
+	align-self: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.quotation {
+	position: relative;
+	top: -30px;
+	align-self: center;
+	width: 40px;
+	height: 40px;
+}
+
+.clientLinks {
+	margin-top: 80px;
+	a{
+	margin: 3px;
+	color: #DDD;
+	&:hover{
+		color: $darkerAccentColor;
+	}
+	}
+}
+
+
+// 5 WORK PROCESS
+
+.workProcess{
+	margin-bottom: 50px;
+}
+
+.workProcess .largerText {
+	@include largerText(#f0e7fa, none);
+	margin: 4px;
+}
+
+.colGrid4Work{
+	justify-content: space-between;
+}
+
+.colItem4Work {
+	width: 20%;
+	text-align: center;
+	p {
+	@include capP;
+	}
+}
+
+.nextSymbol {
+	width: 5%;
+	text-align: center;
+	align-self: center;
+	font-size: 16px;
+	color: $mediumTextColor;
+}
+
+.weWork {
+	color: #ddd;
+	.largerText{
+		@include marginPaddingZero;
+		letter-spacing: $letterSpacing;
+		&:first-of-type{
+			@include largerText(#bac8e5, uppercase);
+		}
+		&:nth-of-type(2){
+			@include largerText(white, uppercase);
+		}
+	}
+}
+
+.weWork .colGrid2{
+	display: flex;
+}
+
+.weWork .colItemSmall2{
+	align-self: center;
+}
+
+// ipad
+.weWork .colItemSmall2 img{
+	max-width: 200px;
+	width: 100%;
+	transform: scale(2);
+}
+
+.weWork .colItemLarge2{
+	line-height: 1.5;
+	align-self: center;
+}
+
+
+// 6 PRICING
+
+.colItem3Price{
+	display: flex;
+	flex-direction: column;
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	padding: 10px 10px 0 10px;
+	box-shadow: $lightShadow;
+	h3 {
+		letter-spacing: 0;
+		text-align: center;
+		font-weight: normal;
+	}
+	ul {
+		padding: 0 0 10px 35px;
+		line-height: 2em;
+		list-style-type: none;
+	}
+	p{
+		text-align: center;
+	}
+}
+
+.decoLinePrice {
+	align-self:center;
+	margin: 20px 0 0 0;
+	@include decoLine;
+}
+
+.colItem3Price:nth-of-type(2n+1) {
+	background-color: $lightTextColor;
+	li:before{
+		font-family: 'FontAwesome';
+		content: '\f00c';
+		margin:0 5px 0 -15px;
+		color: #31bc9c;
+	}
+	p{
+		&:nth-of-type(1){
+			background: -webkit-linear-gradient(120deg, #c507c3, #a317d8, #6f4af0, #304ae9);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 50px;
+			font-weight: bold;
+			margin: 0;
+		}
+		&:nth-of-type(2){
+			padding: 10px;
+			margin: 10px 15px;
+			@include button($mediumTextColor, $sectionBackground)
+			text-transform: uppercase;
+			font-weight: bold;
+			&:hover {
+				color: $mediumTextColor;
+				background-color: $sectionBackground;
+			}
+		}
+	}
+}
+
+.colItem3Price:nth-of-type(2n) {
+	background: $gradient;
+	color: $lightTextColor;
+	li:before{
+		font-family: 'FontAwesome';
+		content: '\f00c';
+		margin:0 5px 0 -15px;
+		color: #FFF;
+	}
+	p{
+		&:nth-of-type(1){
+			color: $lightTextColor;
+			font-size: 50px;
+			font-weight: bold;
+			margin: 0;
+		}
+		&:nth-of-type(2){
+			padding: 10px;
+			margin: 10px 15px;
+			@include button($accentColor, $lightTextColor)
+			text-transform: uppercase;
+			font-weight: bold;
+			&:hover {
+				color: $accentColor;
+				background-color: $lightTextColor;
+			}
+		}
+	}
+}
+
+.colGrid4Price{
+	justify-content: space-around;
+}
+
+.colItem4Price {
+	text-align: center;
+	padding: 35px 0;
+	height: 115px;
+	width: 115px;
+	color: $mediumTextColor;
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	h1{
+		margin: 0 0 1px 0;
+		letter-spacing: 0;
+	}
+	p{
+		@include capP;
+		margin: 0 0 1px 0;
+		letter-spacing: 0;
+	}
+}
+
+.colPrice1 {
+	background-image: url("../assets/circles_90.png");
+}
+
+.colPrice2 {
+	background-image: url("../assets/circles_80.png");
+}
+
+.colPrice3 {
+	background-image: url("../assets/circles_65.png");
+}
+
+.colPrice4 {
+	background-image: url("../assets/circles_85.png");
+}
+
+
+// 7 GET IN TOUCH
+
+.getInTouch form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input {
+	border: 1px solid #DDD;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 8px;
+	text-transform: uppercase;
+	&:focus{
+		border: 1px solid $accentColor;
+		outline: none;
+	}
+}
+
+.colItem3Contact {
+	width: calc(33.33% - 10px);
+	&:nth-of-type(1) {
+		margin-right: 10px;
+	}
+	&:nth-of-type(2) {
+		margin: 0 5px;
+	}
+	&:nth-of-type(3) {
+		margin-left: 10px;
+	}
+}
+
+.textarea {
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin: 20px 0;
+}
+
+.sendMeButton {
+	width: 100%;
+	text-align: right;
+}
+
+.map {
+	@include marginPaddingZero;
+	background: url(../assets/map.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
+
+.pointer {
+	display: block;
+	padding: 50px 0 80px 0;
+}

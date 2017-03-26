@@ -1,0 +1,85 @@
+// VARIABLES
+// colors
+$sectionBackground: #EEE;
+$asideBackground: rgba(114, 53, 232, 0.9);
+$bodyBackground: #fcfcfc;
+$accentColor: #c507c3;
+$darkerAccentColor: #8c33d4;
+$footerBackground: #33313e;
+$gradient:linear-gradient(120deg, #c507c3, #a317d8, #6f4af0, #304ae9);
+$darkTextColor: #000;
+$mediumTextColor: #6F6F6F;
+$lightTextColor: #FFF;
+$shadow: 5px 5px 10px rgba(0,0,0,0.2);
+$lightShadow: 3px 3px 40px rgba(0,0,0,0.3);
+$veryLightShadow: 0 0 60px rgba(0,0,0,0.2);
+
+// values
+$letterSpacing: 2px;
+$galleryHeightNorm: 250px;
+
+@mixin capP {
+	font-size: 10px;
+	color: $mediumTextColor;
+	text-transform: uppercase;
+}
+
+@mixin marginPaddingZero {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin gradientOverlay ($gradientOpacity) {
+	background: linear-gradient(120deg, rgba(197, 7, 195, $gradientOpacity), rgba(163, 23, 216, $gradientOpacity), rgba(111, 74, 240, $gradientOpacity), rgba(48, 74, 233, $gradientOpacity));
+}
+
+@mixin button($buttonColor, $buttonBackgroundColor) {
+    color: $buttonColor;
+    background-color: $buttonBackgroundColor;
+    text-transform: capitalize;
+    padding: 8px 30px;
+	border-radius: 20px;
+	&:hover {
+	color: $asideBackground;
+	background-color: $bodyBackground;
+	}
+}
+
+@mixin buttonWhite($buttonColor, $buttonBackgroundColor) {
+    color: $buttonColor;
+    background-color: $buttonBackgroundColor;
+    text-transform: capitalize;
+    padding: 8px 16px;
+	border-radius: 20px;
+	&:hover {
+	color: $lightTextColor;
+	background: $gradient;
+	}
+}
+
+@mixin largerText ($largerTextColor, $largerTextTransform){
+	font-weight: bold;
+	font-size: 30px;
+	color: $largerTextColor;
+	text-transform: $largerTextTransform;
+}
+
+@mixin teamSocials ($teamSocialsIcons, $teamSocialsBackground){
+	color: $teamSocialsIcons;
+	background-color: $teamSocialsBackground;
+	width: 30px;
+	margin: 2px;
+	text-align: center;
+	padding: 10px;
+	&:hover{
+		color: $lightTextColor;
+		background: $gradient;
+	}
+}
+
+@mixin decoLine{
+	height: 3px;
+	width: 30%;
+	border-radius: 5px;
+	background: $gradient;
+}

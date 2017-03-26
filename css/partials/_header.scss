@@ -1,0 +1,120 @@
+// header
+
+.computerTop{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.computerBottom{
+	width: 100%;
+	vertical-align: top;
+}
+
+
+header{
+	background: URL("../assets/hero.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $lightTextColor;
+	.logo{
+		max-width:100px;
+		width: 100%;
+	}
+	h2{
+		color: $lightTextColor;
+		margin-bottom: 40px;
+	}
+	.buttonPadding{
+		padding-bottom: 50px;
+	}
+}
+
+nav {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ul{
+		list-style-type: none;
+		li{
+			display: inline;
+			padding: 10px;
+			&:last-child {
+				padding-right:0;
+			}
+			a {
+				color: $lightTextColor;
+				border-bottom: 1px dashed transparent;
+			}
+			a:hover{
+				color: $lightTextColor;
+				border-bottom: 1px dashed $lightTextColor;
+			}
+		}
+	}
+}
+
+.heroHeading {
+	text-align: center;
+}
+
+.heroText {
+	margin: 50px 0 12px 0;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+// toggle searchbar
+.searchBarPosition{
+	display: block;
+	position: relative;
+}
+
+.searchBar {
+	display: block;
+	position: absolute;
+	top: -160px;
+	right: 0;
+	transition: top 0.3s ease;
+}
+
+.searchBar input[type=text] {
+	border: none;
+	background-color: white;
+	color: $accentColor;
+	padding: 2px;
+	&:focus {
+		outline: none;
+	}
+}
+
+nav .fa-search {
+	&:hover, &:active{
+		cursor: pointer;
+		box-shadow: $shadow;
+	}
+}
+
+input[type=checkbox]:checked ~ .searchBar {
+		top:0px;
+	}
+
+input[type=checkbox] {
+	display: none;
+}
+
+// mobile search bar
+
+.searchMobile
+{
+	display: none;
+}
+
+.searchMobile input[type=text] {
+	border: 1px solid $accentColor;
+	color: $accentColor;
+	padding: 2px;
+	&:focus {
+		outline: none;
+	}
+}

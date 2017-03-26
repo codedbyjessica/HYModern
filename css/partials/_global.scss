@@ -1,0 +1,90 @@
+// global
+*{
+	box-sizing: border-box;
+}
+
+a, div, li, p, .fa, .input {
+	transition: all 0.3s ease;
+}
+
+
+h1{
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+h2{
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	color: $mediumTextColor;
+	text-transform: capitalize;
+}
+
+h3{
+	letter-spacing: $letterSpacing;
+	text-transform: capitalize;
+}
+
+a{
+	color: $darkTextColor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $darkerAccentColor;
+}
+
+ul, li{
+	@include marginPaddingZero;
+}
+
+body{
+	background-color: $bodyBackground;
+	margin:0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	width: 100%;
+}
+
+.wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.buttonPadding{
+	margin: 20px;
+}
+
+.buttonPurple{
+	@include button($lightTextColor, $accentColor)
+	box-shadow: $shadow;
+}
+
+.heading {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.heading .fa{
+	height: 34px;
+	width: 34px;
+	font-size: 20px;
+	color: $lightTextColor;
+	background: $gradient;
+	padding: 7px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.gradientOverlay{
+	width: 100%;
+	@include gradientOverlay(0.9);
+}
+
+.mobileOnly {
+	display: none;
+}
+

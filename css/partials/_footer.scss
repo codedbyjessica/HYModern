@@ -1,0 +1,144 @@
+// footer
+
+footer{
+	color: $mediumTextColor;
+	background-color: $footerBackground;
+	padding-top: 40px;
+	a{
+		color: $mediumTextColor;
+	}
+	p{
+		line-height: 20px;
+		@include marginPaddingZero;
+	}
+	h3{
+		color: $lightTextColor;
+		@include marginPaddingZero;
+	}
+}
+
+footer .wrapper{
+	display: flex;
+	flex-wrap:wrap;
+	line-height: 20px;
+}
+
+footer .emdash{
+	margin-bottom: 5px;
+}
+
+footer .emdash:before{
+	content: "\2014";
+	color: $accentColor;
+}
+
+.footer1{
+	width: 35%;
+}
+
+.footer2{
+	width: 15%;
+	padding: 0 10px;
+	ul{
+		list-style-type: none;
+		li{
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.footer3{
+	width: 25%;
+	.twitterDate {
+		display: block;
+		color: #8c33d4;
+		margin: 10px 0;
+	}
+}
+
+.instagram{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.insta .fa{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 50px;
+	height:50px;
+	font-size: 0;
+	color: $lightTextColor;
+	@include gradientOverlay(0);
+	&:hover{
+		@include gradientOverlay(0.7);
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+
+.insta{
+	width: 50px;
+	height:50px;
+	background-size: cover;
+	background-position: center;
+	margin: 5px 10px 5px 0;
+}
+
+.insta1 {
+	background-image: url(../assets/insta_small1.jpg);
+}
+
+.insta2 {
+	background-image: url(../assets/insta_small2.jpg);
+}
+
+.insta3 {
+	background-image: url(../assets/insta_small3.jpg);
+}
+
+.insta4 {
+	background-image: url(../assets/insta_small4.jpg);
+}
+
+.insta5 {
+	background-image: url(../assets/insta_small5.jpg);
+}
+
+.insta6 {
+	background-image: url(../assets/insta_small6.jpg);
+}
+
+.footerConnect {
+	padding: 40px;
+	text-align: center;
+}
+
+.footerConnect .fa{
+	height: 32px;
+	width: 32px;
+	font-size: 12px;
+	padding: 10px;
+	margin: 4px;
+	color: #32303d;
+	background: #7f7c8c;
+	border-radius: 50%;
+	text-align: center;
+	&:hover {
+		color: $lightTextColor;
+		background: $gradient;
+	}
+}
+
+.backToTop {
+	bottom:1%;
+	right: 1%;
+	position: fixed;
+	z-index: 10;
+	.fa:hover{
+		color: $accentColor;
+		background: $sectionBackground;
+	}
+}
